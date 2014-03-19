@@ -11,7 +11,7 @@
 
  
 
-      <project path="build" name="AndroidOpenSourceProject/platform/build" groups="pdk"  remote="github" revision="kk-dev"/>
+      <project path="build" name="AndroidOpenSourceProject/platform/build" groups="pdk"  remote="github" revision="kk-dev" />
         <copyfile src="core/root.mk" dest="Makefile" />
       <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
       <project path="art" name="platform/art" />

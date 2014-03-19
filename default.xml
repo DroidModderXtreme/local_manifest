@@ -1,18 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+    <?xml version="1.0" encoding="UTF-8"?>
     <manifest>
 
- 
-<remote name="aosp"
-           fetch="https://android.googlesource.com"
-           review="android-review.googlesource.com" />
+      <remote  name="aosp"
+               fetch=".." />
+      <default revision="refs/tags/android-4.4.2_r2"
+               remote="aosp"
+               sync-j="4" />
 
-  <remote name="github"
-           fetch=".."
-
- 
-
-      <project path="build" name="AndroidOpenSourceProject/platform/build" groups="pdk"  remote="github" revision="kk-dev" />
+      <project path="build" name="platform/build" groups="pdk" >
         <copyfile src="core/root.mk" dest="Makefile" />
+      </project>
       <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
       <project path="art" name="platform/art" />
       <project path="bionic" name="platform/bionic" groups="pdk" />
@@ -430,6 +427,8 @@
       <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
       <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
       <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
+
+    </manifest>
       <project path="device/sony/kumquat" name="AndroidOpenSourceXperia/android_device_sony_kumquat" remote="git" revision="kk-dev" />
       <project path="device/sony/nypon" name="AndroidOpenSourceXperia/android_device_sony_nypon" remote="git" revision="master" />
       <project path="device/sony/pepper" name="AndroidOpenSourceXperia/android_device_sony_pepper" remote="git" revision="master" />

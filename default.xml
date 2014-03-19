@@ -427,8 +427,6 @@
       <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
       <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
       <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
-
-    </manifest>
       <project path="device/sony/kumquat" name="AndroidOpenSourceXperia/android_device_sony_kumquat" remote="git" revision="kk-dev" />
       <project path="device/sony/nypon" name="AndroidOpenSourceXperia/android_device_sony_nypon" remote="git" revision="master" />
       <project path="device/sony/pepper" name="AndroidOpenSourceXperia/android_device_sony_pepper" remote="git" revision="master" />

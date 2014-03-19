@@ -8,6 +8,8 @@
            remote="aosp"
            sync-j="4" />
   
+  <remote name="private"
+           fetch="ssh://git@github.com" />
   
   <!-- Generic Github remote -->
   <remote name="github"

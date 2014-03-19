@@ -9,8 +9,6 @@
   <remote name="github"
            fetch=".."
 
-  <remote name="private"
-           fetch="ssh://git@github.com" />
  
 
       <project path="build" name="AndroidOpenSourceProject/platform/build" groups="pdk"  remote="github" revision="kk-dev"/>
